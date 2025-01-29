@@ -72,9 +72,9 @@ public abstract class ContaBancaria {
                 this.saldo -= valor;
                 contaDestino.saldo += valor;
 
-                System.out.println("- Transferência de R$ " + valor + " realizada com sucesso.");
-                System.out.println("- Conta de origem: " + this.titular + " - Saldo: R$ " + this.saldo);
-                System.out.println("- Conta de destino: " + contaDestino.titular + " - Saldo: R$ " + contaDestino.saldo);
+                System.out.println("- Transferência de R$ " + valor + " realizada com sucesso (De " + this.titular + " para " + contaDestino.titular + ").");
+                System.out.println("- Conta de origem: " + this.titular + " - Saldo atual: R$ " + this.saldo);
+                System.out.println("- Conta de destino: " + contaDestino.titular + " - Saldo atual: R$ " + contaDestino.saldo);
             } else {
                 System.out.println("Saldo insuficiente para transferência.");
             }
@@ -89,10 +89,10 @@ public abstract class ContaBancaria {
                 this.saldo -= valor;
                 contaDestino.saldo += valor;
 
-                System.out.println("- Transferência de R$ " + valor + " realizada com sucesso.");
+                System.out.println("- Transferência de R$ " + valor + " realizada com sucesso (De " + this.titular + " para " + contaDestino.titular + ").");
                 System.out.println("- Descrição: " + descricao);
-                System.out.println("- Conta de origem: " + this.titular + " - Saldo: R$ " + this.saldo);
-                System.out.println("- Conta de destino: " + contaDestino.titular + " - Saldo: R$ " + contaDestino.saldo);
+                System.out.println("- Conta de origem: " + this.titular + " - Saldo atual: R$ " + this.saldo);
+                System.out.println("- Conta de destino: " + contaDestino.titular + " - Saldo atual: R$ " + contaDestino.saldo);
             } else {
                 System.out.println("Saldo insuficiente para transferência.");
             }

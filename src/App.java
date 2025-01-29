@@ -2,7 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         // Polimorfismo de inclusão
         ContaBancaria contaCorrente = new ContaCorrente("João", 152552, 456, 1000, 10);
-        ContaBancaria contaPoupanca = new ContaPoupanca("Sofia", 138867, 101, 2000, 0.05);
+        ContaBancaria contaPoupanca = new ContaPoupanca("Lúcio", 138867, 101, 2000, 0.05);
 
         // Polimorfismo de sobrescrita
         System.out.println();
@@ -31,6 +31,6 @@ public class App {
         System.out.println();
         contaCorrente.transferir(contaPoupanca, 300);
         System.out.println();
-        contaPoupanca.transferir(contaCorrente, 200, "Transferência para conta corrente");
+        contaPoupanca.transferir(contaCorrente, 200, "Transferência para conta corrente (Teste de sobrecarga).");
     }
 }
